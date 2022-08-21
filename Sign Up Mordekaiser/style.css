@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,300;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: linear-gradient(45deg, black, #1B2029);
+    color: aliceblue;
+    font-weight: 500;
+    display: flex;
+    min-height: 100vh;
+}
+
+main {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main h1 {
+    color: #423ba3;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+
+main .social-media a{
+    text-decoration: none;
+}
+
+main .social-media {
+    display: flex;
+    align-content: center;
+}
+
+main .social-media img {
+    width: 36px;
+    margin-left: 3rem;
+}
+
+main .social-media a:nth-child(1) img {
+    margin-left: 0;
+}
+
+main form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main form label {
+    display: flex;
+    flex-direction: column;
+}
+
+main form label span{
+    font-size: 1.3rem;
+    margin-top: 1.5rem;
+
+}
+
+main form input {
+    background: #161923; 
+    width: 300px;
+    height: 50px;
+    padding: 0 0.5rem;
+    margin-top: 2rem;
+    outline: black;
+    color: rgb(151, 144, 144);
+    font-size: 1rem;
+    border-radius: 8px;
+}
+
+main form input[type="submit"] {
+    cursor: pointer;
+    margin-top: 55px;
+    width: 50%;
+    border: 1px solid black;
+    border-radius: 32px;
+    font-size: 1.3rem;
+    color: aliceblue;
+    background-color: rgb(17, 34, 50);
+    transition: all 0.3s ease-in-out;
+}
+
+main form input[type="submit"]:hover {
+    background: rgb(13, 25, 58);
+
+}
+
+section.image {
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+    margin-top: 0px;
+}
+
+section.image img {
+    width: 750px;
+    border-radius: 35px;
+    border: 7px solid rgb(36, 21, 90);
+}
+
+ /* section.image .circle {     
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(#e8cbc0, #636fa4);
+    clip-path: circle(50% at right 100%);
+    z-index: -1;  Mover para a camada anterior usando o z 
+}   */
+
+main .alternative {
+    margin-top: 1.2rem;
+}
+
+main .alternative span {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.3);
+    position: relative;
+} 
+
+main .alternative span::before, main .alternative span::after {
+    position: absolute;
+    content: '';
+    height: 1px;
+    width: 150px;
+    bottom: 50%;
+    right: 50px;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+main .alternative span::after {
+    left: 50px;
+}
+
+main p {
+   color: rgba(204, 114, 61, 0.2);
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: flex-start;
+   
+
+}
